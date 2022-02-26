@@ -77,10 +77,10 @@ for frame_id in range(total_frames):
         cv2.rectangle(frame,  (ROI[0], ROI[1]), (ROI[0]+ ROI[2], ROI[1] +ROI[3]),  (255, 0, 0), 2)
 
 
-    # Escribimos el video de salida
+    # write output video
     out.write(frame)
 
-    # actualizamos el progress bar
+    # update progress bar
     pbar.update(1)
 
   # exit 
